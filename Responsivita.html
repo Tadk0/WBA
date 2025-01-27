@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Doba</title>
+    <link href="https://api.ssps.cajthaml.eu/file/64d9f18f79dad891e8a07c73">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<style>
+    body {
+        background-color: #101414;
+        margin: 0;
+        font-family: "Inter", sans-serif;
+    }
+
+    .menu {
+        width: 100%;
+        background-color: #181c24;
+        height: 80px;
+        color: #58a6ff;
+    }
+
+    .menu>div {
+        width: 1000px;
+        margin: 0px auto;
+        display: flex;
+
+    }
+
+    .menu div {
+        height: 80px;
+        font-size: 40px;
+        line-height: 80px;
+        font-weight: bold;
+
+    }
+
+    .title {
+        display: flex;
+    }
+
+    .menu ul {
+        color: #808a87;
+        list-style: none;
+        font-size: 15px;
+        display: flex;
+        width: 700px;
+        margin: 0;
+        font-weight: normal;
+
+    }
+
+    .menu li {
+        justify-content: center;
+        margin: 0px 10px;
+
+    }
+
+    .menu img {
+        height: 60px;
+        margin: 10px 5px 10px 0px;
+    }
+
+    .joinUs {
+        background-color: #238636;
+        color: white;
+        height: 40px;
+        width: 100px;
+        font-weight: bold;
+        margin: 20px 0px;
+        border: none;
+    }
+
+    .submenu {
+        max-width: 1000px;
+        height: 50px;
+    }
+
+    .submenu ul {
+        list-style: none;
+        font-size: 20px;
+        display: flex;
+        width: 100%;
+        margin: 0;
+        font-weight: normal;
+        height: 100%;
+        padding: 0;
+    }
+
+    .submenu li {
+        justify-content: center;
+        flex-grow: 1;
+        text-align: center;
+        line-height: 50px;
+        color: #a8b3a3;
+    }
+
+    .privilege {
+        margin: 2px 0;
+        height: 30px;
+        max-width: 990px;
+        background-color: #181c1c;
+        text-align: right;
+        color: #a8b3a3;
+        line-height: 30px;
+        padding-right: 10px;
+        width: 100%;
+
+    }
+
+    .content {
+        min-height: 300px;
+        width: 100%;
+        background-color: #14181f;
+        margin: 0;
+
+    }
+
+    .content h1 {
+        text-transform: uppercase;
+        color: #58a6ff;
+        text-align: center;
+        padding-top: 30px;
+        margin: 0px;
+        font-size: 40px;
+        letter-spacing: 5px;
+    }
+
+    .content hr {
+        width: 150px;
+        height: 2px;
+        background-color: white;
+        border: none;
+        margin: 2px auto;
+
+    }
+
+    .text {
+        color: gray;
+        text-align: center;
+        margin: 50px 20px;
+    }
+
+    .boxes {
+        max-width: 880px;
+        height: 280px;
+        background-color: #161b22;
+        margin: 0px;
+        padding: 60px;
+        display: flex;
+        width: 100%;
+    }
+
+    .boxes>div {
+        width: 100px;
+        height: 250px;
+        border: 2px solid #58a6ff;
+        flex-grow: 1;
+        margin: 10px;
+        text-align: center;
+        padding-top: 20px;
+        color: #58a6ff;
+    }
+
+    .boxes i {
+        font-size: 50px;
+        border: 3px solid #58a6ff;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 40px;
+        vertical-align: middle;
+        padding: 25px;
+    }
+
+    .boxes p {
+        margin: 10px;
+    }
+
+    .boxes>div:nth-child(2n+2) i {
+        border-color: #238636;
+    }
+
+    .boxes>div:nth-child(2n+2) {
+        border-color: #238636;
+        color: #238636;
+    }
+
+    .speech {
+        width: 100%;
+        height: 150px;
+        background-color: #14181f;
+        text-align: center;
+        color: #58a6ff;
+    }
+
+    .speech p {
+        color: #808a87;
+        text-align: right;
+        padding-right: 225px;
+    }
+
+    .speech h2 {
+        margin: 0px;
+        padding-top: 40px;
+    }
+
+    .footer {
+        width: 100%;
+        background-color: #0d1117;
+        min-height: 200px;
+        color: white;
+        display: flex;
+        padding-left: 25px;
+    }
+
+    .footer>div {
+        flex-grow: 1;
+
+    }
+
+    .footer p {
+        color: #808a87;
+    }
+
+    .container {
+        max-width: 1000px;
+        margin: 0px auto;
+    }
+
+    .image img {
+        max-width: 1000px;
+        width: 100%;
+    }
+
+    @media (max-width: 1000px) {
+        .boxes {
+            flex-direction: column;
+            max-width: 880px;
+            height: auto;
+            padding: 0px;
+            width: 100%;
+            max-width: 100%;
+        }
+
+        .boxes>div {
+            width: calc(100% - 24px);
+            height: 250px;
+            flex-grow: 1;
+            margin: 10px;
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        .boxes i {
+            font-size: 50px;
+            border-radius: 0px;
+            border: none;
+            text-align: center;
+            line-height: 40px;
+            vertical-align: middle;
+            padding: 0px;
+        }
+
+        .boxes p {
+            margin: 10px;
+        }
+    }
+
+    @media (max-width: 900px) {
+        .title {
+            justify-content: center;
+            width: 100%;
+        }
+
+        .menu {
+            height: auto;
+            flex-direction: column;
+        }
+
+        .menu>div {
+            text-align: center;
+            width: 100%;
+            margin: 0px auto;
+            height: auto;
+            flex-direction: column;
+        }
+
+        .menu ul {
+            justify-content: center;
+            width: 100%;
+            
+        }
+        .joinUs {
+        justify-content: center;
+        align-items: center;
+        margin: 0px auto 20px auto; 
+        padding: 0px;
+    }
+
+
+    }
+
+    @media (max-width: 800px) {
+        .footer {
+            text-align: center;
+            width: 100%;
+            min-height: 200px;
+            display: flex;
+            padding-left: 0px;
+            flex-direction: column;
+        }
+
+    }
+
+
+    @media (max-width: 720px) {
+
+        .menu ul{
+            flex-direction: column;
+        }
+        .menu li{
+            width: calc(100% - 70px);
+            margin: auto 0px;
+            
+        }
+        .submenu {
+
+            height: auto;
+        }
+
+        .submenu li {
+            /*width: 100%;*/
+        }
+
+        .submenu ul {
+
+            flex-direction: column;
+            height: auto;
+        }
+
+        .speech p {
+            text-align: center;
+            padding-right: 0px;
+        }
+
+    }
+</style>
+
+<body>
+    <div class="menu">
+        <div>
+            <div class="title">
+                <img src="https://api.ssps.cajthaml.eu/file/674091dc91831b4e06c6f65c">
+                <div>CyberCorp</div>
+            </div>
+            <ul>
+                <li>Zpravy z podsveti</li>
+                <li>Kybernetika</li>
+                <li>Hackerska elita</li>
+                <li>Casto hackovane otazky</li>
+            </ul>
+            <button class="joinUs">Pripojit se</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="submenu">
+            <ul>
+                <li style="background-color: #23272f;">Preziti</li>
+                <li style="background-color: #2c3139;">Kyberzbrane</li>
+                <li style="background-color: #343b44;">Sitove Valky</li>
+                <li style="background-color: #3b434b;">Digitalni Utopie</li>
+            </ul>
+        </div>
+        <div class="image">
+            <img src="https://api.ssps.cajthaml.eu/file/6740920a91831b4e06c6fb1a">
+        </div>
+        <div class="privilege">2126 &copy; CyberCorp - Vsechna prava zasifrovana</div>
+        <div class="content">
+            <h1>Digitalni Noc
+                <hr>
+            </h1>
+            <div class="text">
+                <p>V roce 2126 se svět rozdělil na osvícené megaměsta a temné digitální pustiny. Lidé hledají bezpečí
+                    pod vrstvou holografických mrakodrapů, zatímco kybernetičtí rebelové bojují za svobodu na
+                    podvratných sítích.</p>
+                <p>Každodenní život je propojen s neurálními implantáty, ale pod jejich lesklou fasádou se skrývá boj o
+                    kontrolu nad myšlenkami. Hackeři na každém rohu upravují realitu, manipulují s daty a mění svět v
+                    nepřetržitý digitální chaos.</p>
+                <p>Kyberkultura je život. Kybernetická válka je nevyhnutelná. Ale jediné, co zůstává jisté, je nekončící
+                    touha po svobodě.</p>
+            </div>
+        </div>
+        <div class="boxes">
+            <div>
+                <i class="fa-solid fa-robot"></i>
+                <h2>AI ROZVOJ</h2>
+                <p> Kyberumělci posouvají hranice kreativity ve spojení s umělou inteligencí.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-key"></i>
+                <h2>BEZPECNOST</h2>
+                <p>Data jsou měnou. Vaše soukromí? Iluze v rukou megakorporací.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-glasses"></i>
+                <h2>BUDOUCNOST</h2>
+                <p>Nová éra začíná ve virtuálním světě - realita ztrácí význam.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-network-wired"></i>
+                <h2>KYBERSITE</h2>
+                <p>Připojte se. Bud'te součástí boje za svobodu na darknetu.</p>
+            </div>
+        </div>
+        <div class="speech">
+            <h2>„Všechno je data. Nezáleží na tom, co je skutečné.“</h2>
+            <p>-CyberProphet</p>
+        </div>
+        <div class="footer">
+            <div>
+                <h2>O nas</h2>
+                <p>CyberCorp je největší síťová komunita, která</p>
+                <p>propojuje mysl a budoucnost.</p>
+            </div>
+            <div>
+                <h2>Kontakt</h2>
+                <p>info@cybercorp.net</p>
+                <p>+420 284 016 666</p>
+            </div>
+            <div>
+                <h2>Informace</h2>
+                <p style="color: white;">PODPORA</p>
+                <p style="color: white;">TECHNOLOGIE</p>
+                <p style="color: white;">HACKERSKE AKADEMIE</p>
+                <p>2126 &copy; CyberCorp</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+
+<!--https://www.w3schools.com/cssref/func_calc.php-->
